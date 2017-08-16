@@ -23,3 +23,12 @@ This is Todo App
 ![screenshot_1502859112](https://user-images.githubusercontent.com/31056603/29347866-04baefb8-8269-11e7-9cd6-32493f7fa262.png)
 ![screenshot_1502859653](https://user-images.githubusercontent.com/31056603/29348015-eb38ae26-8269-11e7-84a9-c28898889f44.png)
 
+
+## Copyright
+ Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+
+
+
