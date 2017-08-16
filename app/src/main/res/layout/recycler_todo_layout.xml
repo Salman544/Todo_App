@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerTodoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/ripple_recycler">
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/fragmentCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:checked="false"
+        android:text=""
+        app:theme="@style/myCheckBoxStyle"/>
+
+    <TextView
+        android:id="@+id/todoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:maxLength="25"
+        android:padding="20dp"
+        android:text="@string/android_developer"
+        android:textColor="#e3000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/timeTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/todoTitle"
+        android:layout_alignBottom="@+id/todoTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:text="@string/time"
+        tools:ignore="RelativeOverlap"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todo"
+        android:layout_alignBottom="@+id/timeTodo"
+        android:layout_toRightOf="@+id/fragmentCheckBox"
+        android:layout_toEndOf="@+id/fragmentCheckBox"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/textView4"/>
+
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_alarm_purple_24dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/alarm"
+        android:id="@+id/recyclerAlarm"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_date_range_purple_24dp"
+        android:layout_alignTop="@+id/recyclerAlarm"
+        android:layout_toRightOf="@+id/recyclerAlarm"
+        android:layout_toEndOf="@+id/recyclerAlarm"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:id="@+id/recyclerReminder"
+        android:contentDescription="@string/remind_me"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_note_black_24dp"
+        android:layout_alignTop="@+id/recyclerReminder"
+        android:layout_toRightOf="@+id/recyclerReminder"
+        android:layout_toEndOf="@+id/recyclerReminder"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:id="@+id/recyclerNote"
+        android:contentDescription="@string/add_a_note"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

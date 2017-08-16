@@ -1,0 +1,101 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pro.salman.todoproject.ui.TodoFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerTodo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recycler_todo_layout"/>
+
+        <TextView
+            android:id="@+id/isEmptyTextViewFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/your_list_is_empty_add_a_to_do"
+            android:textSize="18sp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edit_text_style"
+            android:elevation="20dp"
+            tools:targetApi="lollipop">
+
+            <Button
+                android:id="@+id/addTodoBottomBtn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_add_blue"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/addTodoBottomBtn"
+                android:layout_toRightOf="@+id/addTodoBottomBtn"
+                android:text="@string/add_a_to_do"
+                android:textColor="@color/purple"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/editTextAddToDo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/addTodoBottomBtn"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_toLeftOf="@+id/addEditTextToDoBtn"
+                android:layout_toStartOf="@+id/addEditTextToDoBtn"
+                android:background="@android:color/transparent"
+                android:hint="@string/add_a_to_do"
+                android:imeOptions="actionDone"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/addEditTextToDoBtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3.5dp"
+                android:background="@drawable/ic_add_circle"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TodoProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">Image</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="time">12:30 am</string>
+    <string name="owner_name">Muhammad Salman Zafar</string>
+    <string name="owner_email">salmansz544@gmail.com</string>
+    <string name="titleTodo">My List</string>
+    <string name="add">Add</string>
+    <string name="enter_the_title">Enter The Title</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="open">open Navigation drawer</string>
+    <string name="close">close Navigation drawer</string>
+    <string name="add_a_to_do">Add a to-do</string>
+    <string name="your_list_is_empty_add_a_to_do">Your list is empty. Add a to-do.</string>
+    <string name="agree">Agree</string>
+    <string name="imagecircle">ImageCircle</string>
+    <string name="create_your_profile_for_a_better_experience">Create your profile for a better experience.</string>
+    <string name="reach_your_goals_more_quickly_and_easily">Reach your goals more quickly and easily.</string>
+    <string name="todo_app">Todo App</string>
+    <string name="e_mail">E-mail</string>
+    <string name="nickname">Nickname</string>
+    <string name="next">Next</string>
+    <string name="closeBtn">Close</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="alarm">Alarm</string>
+    <string name="remind_me">Remind me</string>
+    <string name="date">Date</string>
+    <string name="add_due_date">Add due date</string>
+    <string name="created_thu_jul_27_at_10_30_am">Created Thu, Jul 27</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="todo">Todo</string>
+    <string name="note">Note</string>
+    <string name="add_note">Add note . . . .</string>
+</resources>

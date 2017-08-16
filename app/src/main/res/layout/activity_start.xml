@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pro.salman.todoproject.ui.StartActivity">
+
+    <ImageView
+        android:id="@+id/imageViewStartActivity"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/artboardxhdpi"/>
+
+    <TextView
+        android:id="@+id/todoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewStartActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="86dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/todo_app"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewStartActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/reach_your_goals_more_quickly_and_easily"
+        android:textColor="#e6ffffff"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        tools:targetApi="jelly_bean"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/imageViewStartActivity"
+        android:layout_marginTop="9dp"
+        android:text="@string/create_your_profile_for_a_better_experience"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/CameraImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/imagecircle"
+        android:src="@mipmap/ic_launcher"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/CameraImageView"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/CameraImageView"
+        android:layout_toRightOf="@+id/CameraImageView">
+
+        <EditText
+            android:id="@+id/nickNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="13dp"
+            android:hint="@string/nickname"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="23sp"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/CameraImageView"
+        android:layout_alignRight="@+id/CameraImageView"
+        android:layout_below="@+id/CameraImageView"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/e_mail"
+        android:textSize="22sp"
+        tools:targetApi="jelly_bean"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayout"
+        android:layout_alignLeft="@+id/textInputLayout"
+        android:layout_alignRight="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="13dp"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textSize="23sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="20dp"
+        android:background="#39bfbfbf"/>
+
+    <Button
+        android:id="@+id/nextBtnStartActivity"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/next"
+        android:textColor="@android:color/holo_green_dark"
+        tools:ignore="RelativeOverlap"/>
+
+
+    <Button
+        android:id="@+id/closeBtnStartActivity"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/closeBtn"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_alignTop="@+id/CameraImageView"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>

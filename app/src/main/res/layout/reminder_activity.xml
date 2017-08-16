@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarReminder"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <CheckBox
+        android:id="@+id/ReminderFragmentCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarReminder"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        style="@style/myCheckBoxStyle"
+        android:scaleX="1"
+        android:scaleY="1"
+        tools:ignore="UnusedAttribute"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ReminderFragmentCheckBox"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/ReminderFragmentCheckBox"
+        android:layout_toRightOf="@+id/ReminderFragmentCheckBox"
+        android:singleLine="true"
+        android:text="@string/android_developer"
+        android:textColor="#ab000000"
+        android:textSize="25sp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/ReminderFragmentCheckBox"
+        android:background="#0f000000"
+        android:outlineProvider="bounds"
+        tools:targetApi="lollipop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="130dp"
+        android:background="#0f000000"
+        android:outlineProvider="bounds"
+        tools:targetApi="lollipop"/>
+
+    <ImageView
+        android:id="@+id/alarmImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/ReminderFragmentCheckBox"
+        android:layout_alignStart="@+id/ReminderFragmentCheckBox"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/alarm"
+        android:src="@drawable/ic_alarm_black_24dp"/>
+
+    <ImageView
+        android:id="@+id/closeImageRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addTime"
+        android:layout_alignLeft="@+id/deleteImage"
+        android:layout_alignStart="@+id/deleteImage"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_close_black_24dp"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/addTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitle"
+        android:layout_alignStart="@+id/textTitle"
+        android:layout_alignTop="@+id/alarmImage"
+        android:text="@string/remind_me"
+        android:textSize="19sp"
+        android:layout_toLeftOf="@+id/closeImageRemind"
+        android:layout_toStartOf="@+id/closeImageRemind"/>
+
+    <ImageView
+        android:id="@+id/dateImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/alarmImage"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/date"
+        android:src="@drawable/ic_date_range_black_24dp"/>
+
+    <ImageView
+        android:id="@+id/closeDateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateImage"
+        android:layout_alignLeft="@+id/closeImageRemind"
+        android:layout_alignStart="@+id/closeImageRemind"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_close_black_24dp"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitle"
+        android:layout_alignStart="@+id/textTitle"
+        android:layout_alignTop="@+id/dateImage"
+        android:text="@string/add_due_date"
+        android:textSize="19sp"
+        android:layout_toLeftOf="@+id/closeDateImage"
+        android:layout_toStartOf="@+id/closeDateImage"/>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/dateImage"
+        android:background="#0f000000"
+        android:elevation="5dp"
+        tools:targetApi="lollipop"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/addNoteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view4"
+        android:layout_alignLeft="@+id/alarmImage"
+        android:layout_alignStart="@+id/alarmImage"
+        android:layout_below="@+id/view3"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top"
+        android:inputType="text|textFilter"
+        android:hint="@string/add_a_note"/>
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/addNoteEditText"
+        android:background="#0f000000"
+        android:elevation="5dp"
+        tools:targetApi="lollipop"/>
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#0f000000"
+        android:elevation="5dp"
+        tools:targetApi="lollipop"/>
+
+    <TextView
+        android:id="@+id/createdTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="@string/created_thu_jul_27_at_10_30_am"
+        android:textSize="18sp"
+        tools:ignore="RelativeOverlap"/>
+
+    <ImageView
+        android:id="@+id/deleteImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/createdTodo"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:contentDescription="@string/android_developer"
+        android:src="@drawable/ic_delete_forever_black_24dp"/>
+
+</RelativeLayout>
