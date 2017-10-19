@@ -13,7 +13,7 @@ This is Todo App
 8-Bakground Services<br />
 
 ## Screen Shots
-<img src="https://user-images.githubusercontent.com/31056603/29347861-0497a1a2-8269-11e7-921a-eb902d48f13b.png" alt="screenshot_1502380314" style="max-width:50%;">
+<img src="https://user-images.githubusercontent.com/31056603/29347861-0497a1a2-8269-11e7-921a-eb902d48f13b.png" alt="screenshot_1502380314" max-width:"50%">
 ![screenshot_1502859120](https://user-images.githubusercontent.com/31056603/29347858-047fdb76-8269-11e7-8492-fb8b59a28fa5.png)
 ![screenshot_1502859139](https://user-images.githubusercontent.com/31056603/29347859-0483f5a8-8269-11e7-96a0-a53d1359e93e.png)
 ![screenshot_1502859150](https://user-images.githubusercontent.com/31056603/29347860-048b2f76-8269-11e7-887b-2927aa09a2f9.png)
